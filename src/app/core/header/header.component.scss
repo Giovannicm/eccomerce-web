@@ -1,0 +1,13 @@
+header {
+  & > div {
+    margin: 0 auto;
+    .header-logo {
+      font-family: 'Lobster', cursive;
+    }
+    .header-links a {
+      display: block;
+      padding: 4px;
+      width: fit-content;
+    }
+  }
+}
