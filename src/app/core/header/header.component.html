@@ -5,8 +5,8 @@
     </div>
     <nav>
       <ul class="flex gap-6 header-links">
-        <li class="border-2 transition-all border-transparent hover:border-b-pink-500"><a href="#">Início</a></li>
-        <li class="border-2 transition-all border-transparent hover:border-b-pink-500"><a href="#">Salgados</a></li>
+        <li class="border-2 transition-all border-transparent hover:border-b-pink-500"><a [routerLink]="['/']">Início</a></li>
+        <li class="border-2 transition-all border-transparent hover:border-b-pink-500"><a [routerLink]="['/salgados']">Salgados</a></li>
         <li class="border-2 transition-all border-transparent hover:border-b-pink-500"><a href="#">Assados/Pães</a></li>
         <li class="border-2 transition-all border-transparent hover:border-b-pink-500"><a href="#">Especiais</a></li>
         <li class="border-2 transition-all border-transparent hover:border-b-pink-500"><a href="#">Contato</a></li>
@@ -14,7 +14,7 @@
     </nav>
 
     <div class="flex gap-3">
-      <button class="flex items-center justify-center p-1.5 rounded-lg border border-pink-500 transition-all hover:bg-pink-300 focus:bg-pink-300">
+      <button class="flex items-center justify-center p-1.5 rounded-lg border border-pink-500 transition-all hover:bg-pink-300 focus:bg-pink-300" matBadge="0" matBadgePosition="below" matBadgeColor="accent" matBadgeDescription="Quantidade de produtos no carrinho: '0'">
         <mat-icon>shopping_cart</mat-icon>
       </button>
       <button class="flex items-center justify-center p-1.5 rounded-lg border border-pink-500 transition-all hover:bg-pink-300 focus:bg-pink-300">
