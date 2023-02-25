@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { HomeComponent } from './home.component';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { Route, RouterModule } from '@angular/router';
+import { TitleSectionModule } from 'src/app/core/title-section/title-section.module';
+import { TitleSectionComponent } from '../../core/title-section/title-section.component';
+import { HomeComponent } from './home.component';
 
 const homeRoutes: Route[] = [
   {
@@ -15,7 +17,8 @@ const homeRoutes: Route[] = [
     HomeComponent
   ],
   imports: [
-    RouterModule.forChild(homeRoutes)
+    RouterModule.forChild(homeRoutes),
+    TitleSectionModule
   ],
 })
 export class HomeModule { }
